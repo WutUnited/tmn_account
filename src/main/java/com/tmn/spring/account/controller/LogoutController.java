@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.controller;
+package com.tmn.spring.account.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;

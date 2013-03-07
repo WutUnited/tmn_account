@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="com.ing.life.account.model.TransactionHistory" table="TRANSACTION_HISTORY">
+    <class name="com.tmn.spring.account.model.TransactionHistory" table="TRANSACTION_HISTORY">
         <id name="transactionNumber" type="long" column="transaction_number">
             <generator class="identity" />                
         </id>
@@ -13,7 +13,7 @@
         </property>            
         <property name="code">
             <type name="org.hibernate.type.EnumType">
-                <param name="enumClass">com.ing.life.account.enumerates.TransactionType</param>
+                <param name="enumClass">com.tmn.spring.account.enumerates.TransactionType</param>
             </type>
         </property>
 

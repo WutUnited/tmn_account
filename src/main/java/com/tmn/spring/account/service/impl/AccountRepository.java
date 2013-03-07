@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.service.impl;
+package com.tmn.spring.account.service.impl;
 
-import com.ing.life.account.model.Account;
-import com.ing.life.account.service.AccountService;
+import com.tmn.spring.account.model.Account;
+import com.tmn.spring.account.service.AccountService;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

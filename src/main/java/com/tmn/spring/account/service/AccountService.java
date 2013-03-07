@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.service;
+package com.tmn.spring.account.service;
 
-import com.ing.life.account.model.Account;
+import com.tmn.spring.account.model.Account;
 import java.util.List;
 
 /**

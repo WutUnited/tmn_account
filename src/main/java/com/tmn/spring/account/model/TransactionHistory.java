@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.model;
+package com.tmn.spring.account.model;
 
-import com.ing.life.account.enumerates.TransactionType;
+import com.tmn.spring.account.enumerates.TransactionType;
 import java.util.Date;
 import org.apache.log4j.Logger;
 

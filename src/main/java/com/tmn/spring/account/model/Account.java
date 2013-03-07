@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.model;
+package com.tmn.spring.account.model;
 
 import java.util.HashSet;
 import java.util.SortedSet;

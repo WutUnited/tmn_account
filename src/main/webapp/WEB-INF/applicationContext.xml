@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="accountService" class="com.ing.life.account.service.impl.AccountHibernateImpl" />
+    <bean id="accountService" class="com.tmn.spring.account.service.impl.AccountHibernateImpl" />
 </beans>

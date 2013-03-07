@@ -1,7 +1,7 @@
-package com.ing.life.account.service.impl;
+package com.tmn.spring.account.service.impl;
 
-import com.ing.life.account.model.Account;
-import com.ing.life.account.service.AccountService;
+import com.tmn.spring.account.model.Account;
+import com.tmn.spring.account.service.AccountService;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
 import java.util.List;

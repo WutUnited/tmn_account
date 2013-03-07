@@ -54,5 +54,6 @@ public class App {
         session.save(newnewAccount);
         
         session.getTransaction().commit();
+        System.out.println("End Run Test");
     }
 }

@@ -13,7 +13,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
         <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
         <mapping resource="com/tmn/spring/account/model/Account.hbm.xml"/>
         <mapping resource="com/tmn/spring/account/model/User.hbm.xml"/>
         <mapping resource="com/tmn/spring/account/model/TransactionHistory.hbm.xml"/>

@@ -2,11 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.service.impl;
+package com.tmn.spring.account.service.impl;
 
-import com.ing.life.account.model.Account;
-import com.ing.life.account.service.AccountService;
-import com.ing.life.account.util.HibernateUtil;
+import com.tmn.spring.account.model.Account;
+import com.tmn.spring.account.service.AccountService;
+import com.tmn.spring.account.util.HibernateUtil;
 import java.util.List;
 import org.hibernate.Session;
 

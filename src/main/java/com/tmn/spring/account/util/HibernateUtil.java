@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.util;
+package com.tmn.spring.account.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

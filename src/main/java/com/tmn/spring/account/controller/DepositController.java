@@ -2,13 +2,13 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.controller;
+package com.tmn.spring.account.controller;
 
-import com.ing.life.account.enumerates.TransactionType;
-import com.ing.life.account.model.Account;
-import com.ing.life.account.service.impl.AccountHibernateImpl;
-import com.ing.life.account.model.TransactionHistory;
-import com.ing.life.account.service.AccountService;
+import com.tmn.spring.account.enumerates.TransactionType;
+import com.tmn.spring.account.model.Account;
+import com.tmn.spring.account.service.impl.AccountHibernateImpl;
+import com.tmn.spring.account.model.TransactionHistory;
+import com.tmn.spring.account.service.AccountService;
 import java.io.IOException;
 import java.util.Date;
 import javax.servlet.RequestDispatcher;

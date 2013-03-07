@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ing.life.account.controller;
+package com.tmn.spring.account.controller;
 
-import com.ing.life.account.model.User;
-import com.ing.life.account.service.impl.UserRepository;
+import com.tmn.spring.account.model.User;
+import com.tmn.spring.account.service.impl.UserRepository;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;

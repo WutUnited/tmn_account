@@ -18,8 +18,9 @@ import org.hibernate.Session;
  * @author roofimon
  */
 public class App {
-
-    public static void main(String[] args) throws ParseException {
+    
+    public static void run() throws ParseException
+    {
         System.out.println("Maven + Hibernate + MySQL");
         Session session = HibernateUtil.getSessionFactory().openSession();
 
@@ -55,5 +56,9 @@ public class App {
         
         session.getTransaction().commit();
         System.out.println("End Run Test");
+    }
+    
+    public static void main(String[] args) throws ParseException {
+        run();
     }
 }

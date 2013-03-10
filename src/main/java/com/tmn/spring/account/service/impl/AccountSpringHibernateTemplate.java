@@ -5,6 +5,7 @@ import com.tmn.spring.account.service.AccountService;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
 import java.util.List;
+import org.hibernate.SessionFactory;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,35 +15,37 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class AccountSpringHibernateTemplate  implements AccountService {
-
+    
     private HibernateTemplate hibernateTemplate;
 
-    public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
-        this.hibernateTemplate = hibernateTemplate;
+    @Override
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.hibernateTemplate = new HibernateTemplate(sessionFactory);
     }
 
     @Override
     public void createAccount(Account newAccount) {
-        //To change body of implemented methods use File | Settings | File Templates.
+       this.hibernateTemplate.save(newAccount);
     }
 
     @Override
     public Account getAccountByCode(String code) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+       
+        return  this.hibernateTemplate.get(Account.class, code);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public List<Account> getAllAccount() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return this.hibernateTemplate.loadAll(Account.class);  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     @Override
     public void removeAccount(String code) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.hibernateTemplate.delete(this.getAccountByCode(code));
     }
 
     @Override
     public void updateAccount(Account targetAccount) {
-        //To change body of implemented methods use File | Settings | File Templates.
+        this.hibernateTemplate.merge(targetAccount);
     }
 }

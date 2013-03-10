@@ -9,6 +9,7 @@ import com.tmn.spring.account.service.AccountService;
 import com.tmn.spring.account.util.HibernateUtil;
 import java.util.List;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -53,5 +54,10 @@ public class AccountHibernateImpl implements AccountService {
         session.beginTransaction();
         session.save(newAccount);
         session.getTransaction().commit();
+    }
+
+    @Override
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.apache.log4j.Logger;
+import org.hibernate.SessionFactory;
 
 /**
  *
@@ -61,5 +62,10 @@ public class AccountRepository implements AccountService {
     @Override
     public Account getAccountByCode(String code) {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

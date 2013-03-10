@@ -49,10 +49,22 @@ public class App {
         newnewAccount.setName("manon");
         newnewAccount.setBalance(new Double(100));
         
+        newnewAccount.getTransactionHistory().add(firstTransaction);
+        newnewAccount.getTransactionHistory().add(secondTransaction);
+        
+        
+        Account thirdAccount = new Account();
+        thirdAccount.setCode("1234567890");
+        thirdAccount.setName("jeerapun");
+        thirdAccount.setBalance(new Double(1000));
+        
+        thirdAccount.getTransactionHistory().add(firstTransaction);
+        thirdAccount.getTransactionHistory().add(secondTransaction);
         
         
         session.save(newAccount);
         session.save(newnewAccount);
+        session.save(thirdAccount);
         
         session.getTransaction().commit();
         System.out.println("End Run Test");
